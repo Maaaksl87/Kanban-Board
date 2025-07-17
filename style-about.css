@@ -1,0 +1,22 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    display: block;
+}
+
+.footer {
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    background-color: #444;
+    height: 100px;
+    padding: center;
+}
+
+.Bob {
+    color: black;
+    background-color: orange;
+    opacity: 0.5;
+}
