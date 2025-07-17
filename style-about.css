@@ -1,22 +1,60 @@
 html {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(212, 210, 210);
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    --footer-height: 60px;
 }
 
 .header {
     display: block;
 }
 
+.title {
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: center;
+    border: #444;
+    
+}
+
 .footer {
-    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     color: #fff;
-    background-color: #444;
-    height: 100px;
-    padding: center;
+    background-color: #000;
+    line-height: var(--footer-height);
+    height: var(--footer-height);
+}
+
+.catalog__link {
+    text-decoration: double;
+    color: white;
 }
 
 .Bob {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: flex;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 500px black;
+    border: 10px solid black;
+
+}
+
+.Max {
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: flex;
     color: black;
-    background-color: orange;
-    opacity: 0.5;
+    font-weight: bold;
+    box-shadow: 0 10px 500px pink;
+    border: 10px solid pink; 
+
 }
