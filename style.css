@@ -1,11 +1,21 @@
+html {
+    
+}
+
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
+    --footer-height: 60px;
+    --container-height: 40px;
 }
 
 .container {
-    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--container-height);
 }
 
 .sidebar {
@@ -13,8 +23,7 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     color: white;
-    padding: 20px;
-    position: fixed;
+   
 }
 
 .sidebar a {
@@ -24,3 +33,14 @@ body {
     padding: 10px 0;
     transition: background-color 0.3s ease;
 }   
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    line-height: var(--footer-height);
+    height: var(--footer-height);
+}
