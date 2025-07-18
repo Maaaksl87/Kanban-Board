@@ -1,0 +1,63 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    background-image: url(#black_.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(225, 225, 255, 0.7);
+}
+
+body {
+    margin: 0;
+    --footer-height: 60px;
+}
+
+.header {
+    display: block;
+}
+
+.title {
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: center;
+    border: #444;
+    
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    line-height: var(--footer-height);
+    height: var(--footer-height);
+}
+
+.catalog__link {
+    text-decoration: double;
+    color: white;
+}
+
+.Bob {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: flex;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 10px 500px black;
+    border: 10px solid black;
+
+}
+
+.Max {
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: flex;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 10px 500px pink;
+    border: 10px solid pink; 
+
+}
