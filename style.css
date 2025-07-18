@@ -1,21 +1,22 @@
-html {
-    
-}
 
 body {
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    --footer-height: 60px;
-    --container-height: 40px;
+    --footer-height: 50px;
+    --container-height: 20px;
 }
 
-.container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: var(--container-height);
+.add-tp-do-board {
+    
+}
+
+.add-in-progres-board {
+
+}
+
+.add-done-board {
+
 }
 
 .sidebar {
@@ -35,12 +36,16 @@ body {
 }   
 
 .footer {
+    text-align: center;
+    padding: 15px 0;
     position: absolute;
+    font-size: 14px;
+    margin-top: 30px;
     bottom: 0;
     width: 100%;
-    text-align: center;
     color: #fff;
     background-color: #000;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
     line-height: var(--footer-height);
     height: var(--footer-height);
 }
