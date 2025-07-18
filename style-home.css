@@ -41,8 +41,7 @@ body::before {
 .sidebar {
   position: absolute;
   top: 60px; 
-  width: 735px;
-  height: 700px;
+  width: 135px;
   padding: 0;
   transition: transform 0.3s ease;
   transform: translateX(0);
@@ -56,6 +55,7 @@ body::before {
     display: block;
     padding: 10px;
     color: white;
+    border: 5px solid;
     text-decoration: none;
 }
 
