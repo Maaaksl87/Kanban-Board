@@ -1,7 +1,22 @@
+
 body {
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    --footer-height: 50px;
+    --container-height: 20px;
+}
+
+.add-tp-do-board {
+    
+}
+
+.add-in-progres-board {
+
+}
+
+.add-done-board {
+
 }
 
 .sidebar {
@@ -9,8 +24,7 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     color: white;
-    padding: 20px;
-    position: fixed;
+   
 }
 
 .sidebar a {
@@ -20,3 +34,18 @@ body {
     padding: 10px 0;
     transition: background-color 0.3s ease;
 }   
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    font-size: 14px;
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
+    line-height: var(--footer-height);
+    height: var(--footer-height);
+}
