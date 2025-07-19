@@ -36,6 +36,10 @@ body::before {
     margin: 10px;
     z-index: 2;
     position: relative;
+    text-shadow: 
+    1px 1px 2px white,
+    0 0 1em darkblue,
+    0 0 0.2em blue;;
 }
 
 .sidebar {
@@ -67,12 +71,17 @@ body::before {
 }
 
 h1.table {
-    color: #333;
+    color: #ffffff;
     font-size: clamp(24px, 5vw, 48px);
     text-align: center;
     margin: 0 auto 30px auto;
     max-width: 600px;
+    text-shadow: 
+    1px 1px 2px red,
+    0 0 1em blue,
+    0 0 0.2em blue;
 }
+
 
 
 .footer {
