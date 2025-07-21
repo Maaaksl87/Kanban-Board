@@ -24,7 +24,6 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://i.pinimg.com/736x/1c/ed/7d/1ced7dbaed97847465dd0deb4fece8bf.jpg') no-repeat center center/cover;
   filter: blur(8px);
   z-index: -1;
 }
@@ -46,7 +45,6 @@ body::before {
   top: 60px;
   width: 735px;
   height: 700px;
-  /* background: url('https://i.pinimg.com/736x/dd/3e/26/dd3e264fa35739fc9126328e6bf6ad13.jpg'); */
   padding: 0;
   transition: transform 0.3s ease;
   transform: translateX(0);
@@ -54,6 +52,44 @@ body::before {
 
 .sidebar.hidden {
   transform: translateX(-100%);
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding-top: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 6px;
+}
+
+.sidebar ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.sidebar ul li i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #888;
+}
+
+.sidebar ul li span {
+  font-size: 16px;
 }
 
 .nav__link {
