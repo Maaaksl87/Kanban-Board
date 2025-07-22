@@ -4,33 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanban Board</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <button id="toggle">☰</button>
+      <nav class="nav" role="navigation">
+        <!-- <button id="toggle" aria-label="Toggle sidebar" type="button">☰</button> -->
+        <!-- I broke it, if you want to fix it, but I think it will change many times -->
 
-        <aside class="sidebar">
-    <ul>
-      <li><a href="home.html" class="ri-layout-grid-line"></a><span>Home</span></li>
-      <li><a href="about-us.html" class="ri-message-3-line"></a><span>Messages</span></li>
-      <li><a href="home.html" class="ri-task-line"></a><span>Tasks</span></li>
-      <li><a href="home.html" class="ri-user-3-line"></a><span>Members</span></li>
-      <li><a href="home.html" class="ri-settings-3-line"></a><span>Settings</span></li>
-    </ul>
-  </aside>
+        <aside class="sidebar" aria-label="Main navigation" data-state="open">
+          <ul>
+            <li>
+              <a href="home.html" aria-current="page">
+                <img src="./src/assets/images/home-icon.svg" alt="Home icon" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="messages.html">
+                <img
+                  src="./src/assets/images/message-icon.svg"
+                  alt="Messages icon"
+                />
+                <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="tasks.html">
+                <img src="./src/assets/images/task-icon.svg" alt="Tasks icon" />
+                <span>Tasks</span>
+              </a>
+            </li>
+            <li>
+              <a href="members.html">
+                <img
+                  src="./src/assets/images/profile-icon.svg"
+                  alt="Profile icon"
+                />
+                <span>Members</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
       </nav>
     </header>
 
     <main class="container">
-      <h1 class="table">Kanban Table</h1>
     </main>
 
-    <footer class="footer">
-      If you have idea for this class, you can change it
-    </footer>
+    <!--I think than we don't need footer section now. It will be in the future, but not now :)-->
     <script src="./src/main.js"></script>
   </body>
 </html>
